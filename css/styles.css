@@ -64,6 +64,13 @@
   --bs-body-bg: #fff;
 }
 
+.fr{
+}
+
+.en{
+  display: none;
+}
+
 *,
 *::before,
 *::after {

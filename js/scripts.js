@@ -31,4 +31,29 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const language = document.querySelector('input[id="language"]');;
+
+    language.addEventListener('click', function(){
+        const textFR = document.getElementsByClassName('fr');
+        const textEN = document.getElementsByClassName('en');
+
+        if (language.checked) {
+            for(i=0; i < textFR.length; i++) {
+                textFR[i].style.display = 'none';
+            }
+            for(i=0; i < textEN.length; i++) {
+                textEN[i].style.display = 'block';
+            }
+        }
+        
+        if (!language.checked) {
+            for(i=0; i<textFR.length; i++) {
+                textFR[i].style.display = 'block';
+            }
+            for(i=0; i<textEN.length; i++) {
+                textEN[i].style.display = 'none';
+            }
+        }
+    });
+
 });
