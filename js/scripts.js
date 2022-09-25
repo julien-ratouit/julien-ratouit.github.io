@@ -31,12 +31,15 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    //this get the input of the switch language selector (true/false)
     const language = document.querySelector('input[id="language"]');;
 
+    //function that display every block of class "en" or "fr"
     language.addEventListener('click', function(){
         const textFR = document.getElementsByClassName('fr');
         const textEN = document.getElementsByClassName('en');
-
+        
+        // if switch is switch on (english) then display english but not french
         if (language.checked) {
             for(i=0; i < textFR.length; i++) {
                 textFR[i].style.display = 'none';
@@ -46,6 +49,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         }
         
+        // same as above but with french
         if (!language.checked) {
             for(i=0; i<textFR.length; i++) {
                 textFR[i].style.display = 'block';
