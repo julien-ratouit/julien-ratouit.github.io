@@ -65,6 +65,7 @@
 }
 
 .fr{
+  display: block;
 }
 
 .en{
@@ -11384,12 +11385,12 @@ p.lead {
     flex-direction: column;
     width: 100%;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
+  /* #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
-  }
+  } */
 }
 .social-icons .social-icon {
   display: inline-flex;
